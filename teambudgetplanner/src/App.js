@@ -94,7 +94,7 @@ function App() {
                     <input type="number" class="form-control" placeholder="Vendor ID" id="idDelete"></input>
                   </div>
                   <br></br>
-                  <button type="button" class="btn btn-secondary" onClick={del}>Submit</button>
+                  <button type="submit" class="btn btn-secondary" onClick={del}>Submit</button>
 
               </form>
             </div>
@@ -143,4 +143,5 @@ function del(){
   console.log(allvendors)
   localStorage.setItem("vendorsUpdate", JSON.stringify(allvendors))
 }
+export {allvendors};
 export default App;
